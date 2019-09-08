@@ -1265,6 +1265,7 @@
       "cant_repair": "%1$s**%2$s** it's not an item you can repair. You can only repair broken items.",
       "no_tool": "%1$sYou need a Tier 2 or above wrench to repair this item. Make sure you have it and that you specified the correct wrench in case you specified it. Remember to use quotes if the name has spaces.",
       "dust": "%1$sYour inventory it's too dusty to perform a repair. Dust level: %2$s",
+      "no_main_item": "You can't repair an item you don't have.",
       "not_wrench": "%1$sYou can't use this as a wrench. Remember to use quotes if the name has spaces.",
       "not_enough_level": "%1$sYou need a higher tier wrench to perform this repair.",
       "not_enough_money": "%1$sYou don't have enough money to repair this item.",

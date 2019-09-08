@@ -412,6 +412,11 @@ public class ItemCmds {
                         Item repairedItem = Items.fromId(brokenItem.getMainItem());
                         long repairCost = repairedItem.getValue() / 3;
 
+                        if(!playerInventory.containsItem(brokenItem)) {
+                            event.getChannel().sendMessageFormat(languageContext.get("commands.repair.no_main_item"), EmoteReference.ERROR, repairedItem.getName()).queue();
+                            return;
+                        }
+
                         long playerMoney = isSeasonal ? seasonalPlayer.getMoney() : player.getMoney();
                         if(playerMoney < repairCost) {
                             event.getChannel().sendMessageFormat(languageContext.get("commands.repair.not_enough_money"), EmoteReference.ERROR, playerMoney, repairCost).queue();
